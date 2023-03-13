@@ -1,0 +1,286 @@
+#6
+#a
+n = int(input("Enter n : "))
+for i in range(1,n+1):
+    for j in range (1,i+1):
+        print(j,end="  ")
+    print("")
+print("  ")
+'''
+Output:
+Enter n : 5
+1  
+1  2  
+1  2  3  
+1  2  3  4  
+1  2  3  4  5  
+'''
+#b
+m = int(input("Enter m : "))
+for i in range(1,m+1):
+    for j in range(i,m):
+        print(" ",end="  ")
+    for k in range(i,0,-1):
+        print(k,end ="  ")
+    for l in range(2,i+1):
+        print(l,end ="  ")
+    print("")
+'''
+Output:
+Enter m : 4
+         1  
+      2  1  2  
+   3  2  1  2  3  
+4  3  2  1  2  3  4  
+
+'''
+#c
+a = int(input("Enter a : "))
+for i in range(a,0,-1):
+    for j in range (i,0,-1):
+        print(j,end="  ")
+    print("")
+'''
+Output:
+Enter a : 5
+5  4  3  2  1  
+4  3  2  1  
+3  2  1  
+2  1  
+1  
+'''
+#d
+b =  int(input("Enter b : "))
+for i in range(1,b+1):
+    for j in range(1,i+1):
+        print(i,end="  ")
+    print()
+'''
+Output:
+Enter b : 5
+1  
+2  2  
+3  3  3  
+4  4  4  4  
+5  5  5  5  5  
+
+'''
+#e
+c =  int(input("Enter c : "))
+for i in range(1,c+1):
+    for j in range(1,i):
+        print(" ",end=" ")
+    for k in range(i,c+1):
+        print(k, end=" ")
+    print()
+
+'''
+Output:
+Enter c : 5
+1 2 3 4 5 
+  2 3 4 5 
+    3 4 5 
+      4 5 
+        5 
+'''
+
+#f
+d =  int(input("Enter d : "))
+for i in range(1,d+1):
+    for j in range(1,d+1):
+        if(i == 1 or i == d or j == 1 or j == d):
+            print("*", end="  ")
+        else:
+            print(" ",end="  ")
+    print()
+'''
+Output:
+Enter d : 5
+*  *  *  *  *  
+*           *  
+*           *  
+*           *  
+*  *  *  *  *  
+'''
+
+#g
+e =  int(input("Enter e : "))
+for i in range(1,e+1):
+    for j in range(1,e+1):
+        print("*", end="  ")
+    print()
+'''
+Output:
+Enter e : 5
+*  *  *  *  *  
+*  *  *  *  *  
+*  *  *  *  *  
+*  *  *  *  *  
+*  *  *  *  *  
+'''
+
+#h
+f = int(input("Enter f : "))
+for i in range (1,f+1):
+    for j in range (i,f):
+        print(" ",end="  ")
+    for k in range (1,i+1):
+        print("*",end="  ")
+    for l in range (2,i+1):
+        print("*", end="  ")
+    print()
+
+'''
+Output:
+Enter f : 5
+            *  
+         *  *  *  
+      *  *  *  *  *  
+   *  *  *  *  *  *  *  
+*  *  *  *  *  *  *  *  *  
+
+'''
+#i
+num = int(input("Enter the Number: "))
+for i in range(1, num+1):
+    for j in range(0, i):
+        print(" ", end="")
+    for j in range(1, (num*2 - (2*i - 1))+1):
+        if i == 1 or j == 1 or j ==(num*2 -(2*i-1)):
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+'''
+Output:
+Enter the Number: 6
+ *****
+  *       *
+   *     *
+    *   *
+     * *
+      *
+
+'''
+
+#j
+g = int(input("Enter g : "))
+for i in range (1,g+1):
+    for j in range(2,i+1):
+        print(" ",end="  ")
+    for k in range(i,g+1):
+        print("*",end="  ")
+    for l in range(i,g):
+        print("*", end="  ")
+    print()
+'''
+Output:
+Enter g : 5
+*  *  *  *  *  *  *  *  *  
+   *  *  *  *  *  *  *  
+      *  *  *  *  *  
+         *  *  *  
+            *  
+
+'''
+#k
+row = int(input('Enter row: '))
+for i in range(1, row+1):
+    for j in range(1,row-i+1):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        if j==1 or j==2*i-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+for i in range(row-1,0, -1):
+    for j in range(1,row-i+1):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        if j==1 or j==2*i-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+'''
+Output:
+Enter number of row: 5
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+'''
+#l
+q = int(input("Enter q : "))
+for i in range (1,q+1):
+    for j in range (i,q):
+        print(" ",end="  ")
+    for k in range (1,i+1):
+        print("*",end="  ")
+    for l in range (2,i+1):
+        print("*", end="  ")
+    print()
+for z in range (1,q):
+    for r in range(1,z+1):
+        print(" ", end="  ")
+    for s in range (z,q):
+        print("*",end="  ")
+    for t in range (z,q-1):
+        print("*",end="  ")
+    print()
+'''
+Output:
+Enter q : 5
+            *  
+         *  *  *  
+      *  *  *  *  *  
+   *  *  *  *  *  *  *  
+*  *  *  *  *  *  *  *  *  
+   *  *  *  *  *  *  *  
+      *  *  *  *  *  
+         *  *  *  
+            *  
+
+'''
+#m
+r1 = int(input("Enter r1 : "))
+for i in range(1,r1+1):
+    for j in range(1,i):
+        print(" ",end="  ")
+    for k in range(i,r1+1):
+        print("$", end="  ")
+    print()
+'''
+Output:
+Enter r1 : 5
+$  $  $  $  $  
+   $  $  $  $  
+      $  $  $  
+         $  $  
+            $  
+
+'''
+#
+r2 = int(input("Enter r2 : "))
+for i in range(1,r2+1):
+    for j in range(i,r2):
+        print(" ",end="  ")
+    for k in range(1,i+1):
+        print("#", end="  ")
+    print()
+'''
+Output:
+Enter r2 : 6
+               #  
+            #  #  
+         #  #  #  
+      #  #  #  #  
+   #  #  #  #  #  
+#  #  #  #  #  #  
+'''6
